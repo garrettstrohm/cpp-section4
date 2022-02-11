@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=FirstProgram
 ConfigurationName      :=Debug
-WorkspacePath          :=/Users/garrettstrohm/Documents/Section4
-ProjectPath            :=/Users/garrettstrohm/Documents/Section4/FirstProgram
+WorkspacePath          :=/Users/garrettstrohm/Development/CPP/Section4
+ProjectPath            :=/Users/garrettstrohm/Development/CPP/Section4/FirstProgram
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -93,7 +93,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/garrettstrohm/Documents/Section4/FirstProgram/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/Users/garrettstrohm/Development/CPP/Section4/FirstProgram/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 
